@@ -1,84 +1,44 @@
 # 태양광발전 발전량 예측 기반 ESS 운영 방안 제공 서비스  
 > 지역별 태양광 발전데이터와 날씨데이터 등을 수집하여 인공지능 기반으로 발전량을 예측하여 최적 ESS 운영방안 제시
 
-## Demo
-- Full demo video  [ [link](https://youtu.be/wQf57Zkly0A) ]
-- Final Report  [ [link](./documents/final_report.pdf) ]
-
-### Chat with Voice Recognition
-#### Situation: Currency Exchange
-You can see the result of **Similarity** and **Correct**. Similarity means whether you speak well according to the situation. Correct means how much you talk with grammar.
-
-<img src="./image/main.gif" width="400x"/>
-
-
-<br/>
-
-### AFL
-AFL can check Similarity and Correct.
-
-<img src="./image/AFL.gif" width="400x" />
-
-<br/>
-
-
-### Quiz
-You can easily review the textbook by solving it.
-
-<img src="./image/front-view.gif" />
-
 ## Introduction
-- Presentation [ [slide](https://drive.google.com/file/d/1aKTveAp5rdqOjbpVT-CFu0GioQ4GMEt1/view?usp=sharing) | [video](https://youtu.be/eyggIxctkF0) ]
+- Full demo video  [ [link](https://youtu.be/bqdp7wjlU8k) ]
+- Final Report  [ [link](https://github.com/goareum93/2021_KDT_hackathon/blob/master/06%2C%20Submition/Final/1.%20renewable_PPT.pdf) ]
 
-- Summary paper [ [kor](https://drive.google.com/drive/u/0/folders/1y1SoWDfAhpzr551PpXJm3POBo7b3WKCb) | [eng](https://drive.google.com/file/d/105vMI1IkXChRjkYUAzhL9lGUbG5zzY4i/view?usp=sharing) ]
+
 
 
 ## Project Process
-<img src="./image/project_process.png" />
+![image-20211029193025699](README.assets/image-20211029193025699.png)
 
 ## Dataset
-### ConvAI2 Data
-<img src="./image/convai_dataset.png" />
 
-### Project Data
-<img src="./image/dataset.png" />
+![image-20211029193033257](README.assets/image-20211029193033257.png)
+
+![image-20211029193045457](README.assets/image-20211029193045457.png)
+
+![image-20211029193056419](README.assets/image-20211029193056419.png)
 
 ## Models
-### Conversational AI
-- Open AI GPT
-- Open AI GPT2
 
-### AFL
-> AFL stands for Assessment For Learning. This word to refer to a way of evaluating users on an achievement basis, away from traditional learning evaluation methods.
+- ![image-20211029193115136](README.assets/image-20211029193115136.png)
 
-Therefore, the project aimed to score user evaluations for continuous learning and motivation using MRPC, CoLA dataset, and Spell Check API.
+## Evaluation
 
-- MRPC (Microsoft Research Paraphrase Corpus)
-- CoLA (Corpus of Linguistic Acceptability)
-- Bing Spell Check API 
+![image-20211029193245346](README.assets/image-20211029193245346.png)
 
+## Application
 
-## Fine-tuning
 - AI Hub Korean-English translation corpus was used for fine tuning. [ [link](https://aihub.or.kr/aidata/87) ]
 - Plus, We add the situation data made by English text book.
 
 
 
-## Parameter Optimization
+## PV+ESS algorithm
 
-| **Argument**                | **Default value** | **Modified Value** |                       **Description**                        |
-| :-------------------------- | ----------------- | ------------------ | :----------------------------------------------------------: |
-| Model                       | Open AI GPT       | **GPT2**           |                      Open AI GPT, GPT2                       |
-| Num_candidates              | 2                 | **6**              |              candidate group for Next Utterance              |
-| Max_history                 | 4                 | **2**              |       Number of previous utterances to keep in history       |
-| Gradient_accumulation_steps | 8                 | **4**              | Used to troubleshoot memory problems on GPU during Optimization |
-| Epochs                      | 1                 | **30**             |                       Number of Epochs                       |
-| Train_batch_size            | 4                 | **2**              |                   Batch size for training                    |
-| Valid_batch_size            | 4                 | **2**              |                  Batch size for validation                   |
-
-
-## Evaluation
-
-<img src="./image/model.png" />
+![image-20211029193214226](README.assets/image-20211029193214226.png)
 
 ## Reference
+
+[[link](https://www.notion.so/Main-b73c0f98c9d743e9ae39d6311c4003eb)]
+
