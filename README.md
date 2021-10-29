@@ -25,14 +25,21 @@
 
 ## Evaluation
 
+- 총 3개의 모델 중 DNN 모델의 경우 낮은 score가 나왔기 때문에 제외
+- 앙상블 모델 중 SVM과 GBR 사용하기로 결정
+- GridSearch를 통해 최적화한 결과 점수가 비슷하지만 상대적으로 가볍고 빠른 GBR를 최종 모델로 선정
+
 ![image-20211029193245346](README.assets/image-20211029193245346.png)
 
 ## Application
 
-- AI Hub Korean-English translation corpus was used for fine tuning. [ [link](https://aihub.or.kr/aidata/87) ]
-- Plus, We add the situation data made by English text book.
+- No-code 툴인 Bubble 활용 앱 디자인 및 구현
 
+![image-20211029193717816](README.assets/image-20211029193717816.png)
 
+![image-20211029193732970](README.assets/image-20211029193732970.png)
+
+![image-20211029193543674](README.assets/image-20211029193543674.png)
 
 ## PV+ESS algorithm
 
